@@ -1,0 +1,1552 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "a50f4188-d514-415e-a54d-787705d49609",
+   "metadata": {},
+   "source": [
+    "Data structure and Python Lists – List Methods and List Slicing \n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3d733ee1-a22e-4bd0-9c69-455877646e3b",
+   "metadata": {},
+   "source": [
+    "A Data Structure is a way of organizing, storing, and managing data in a computer so that it can be accessed, modified, and processed efficiently.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "1241c5e0-315c-45b2-b1a6-a5b7c4ccf302",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "name = \"Vandana\"\n",
+    "print(type(name))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "8001995f-4fa4-4f24-b8df-8c402d72bda0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "the datatype of city : <class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "city = \"Kerala\"\n",
+    "print(\"the datatype of city :\",type(city))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "9d787abe-a890-4f7c-9d5e-8799b6f77941",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The datatype of message: <class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "message = \"welcome to Python\"\n",
+    "print(\"The datatype of message:\",type(message))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "84d9d1fe-ddfc-4c4d-ba44-f2df1b4b95f3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "number = \"12345\"\n",
+    "print(type(number))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "206c8f64-2093-448d-97b8-9ad5a5bb3ad6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "name = \"Vandana\"\n",
+    "place = \"calicut\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "1f2d0041-1a09-43dc-9bb0-3892716968d2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "calicut\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(place)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "3f4dd218-5156-47ed-bc4a-b831a97c8058",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "7\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(len(place))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "cbd902f6-5c86-41a2-904f-8ec729a8c90a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "7\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(len(name))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "12b68dca-5efe-4910-847a-e85df1b5ba67",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "17\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(len(message))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "93b93561-488d-4d51-b1a3-0d56689cf986",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(len(number))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6e515739-ef7e-4a17-83b1-eb06f0f75084",
+   "metadata": {},
+   "source": [
+    "**String Indexing**\n",
+    "Each character in a string has a position called an index.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "68efd7b4-9872-4724-960e-bcb6bf0a291d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "T\n"
+     ]
+    }
+   ],
+   "source": [
+    "text = \"PYTHON\"\n",
+    "print(text[2])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "093f2f91-2b0d-4e7a-97fc-4c1dc58ecf56",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "H\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(text[3])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "34e53b22-fa9b-4216-b05e-264c4a9b4f44",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "O\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(text[-2])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "a5162a26-684c-481b-945f-b658f752750f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "P\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(text[-6])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b94f364e-6e28-468b-8ee1-dabc2c6e487e",
+   "metadata": {},
+   "source": [
+    "**String Methods** \n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6b5fc53a-1765-4c85-bded-b289e0cab450",
+   "metadata": {},
+   "source": [
+    "**UPPER()**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "8f902a3e-1614-432c-a88a-44126e566e6b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "VANDANA\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(name.upper())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "cc9841fc-faf2-4ca1-b68d-34ad7be62c99",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "VANDANA\n",
+      "Hi VANDANA\n"
+     ]
+    }
+   ],
+   "source": [
+    "name1 = name.upper()\n",
+    "print(name1)\n",
+    "print(\"Hi\",name1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "81e4c33b-a9fc-44ec-af58-59cd586280ad",
+   "metadata": {},
+   "source": [
+    "**lower()**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "28837867-7919-41a5-bf43-c24769f7c189",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "vandana\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(name.lower())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "313067c9-0ec2-4999-b7aa-1462212eb46e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "vandana\n",
+      "Hello vandana\n"
+     ]
+    }
+   ],
+   "source": [
+    "name2 = name.lower()\n",
+    "print(name2)\n",
+    "print(\"Hello\",name2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3306af5d-13c9-4607-8df5-ab654ccd34ce",
+   "metadata": {},
+   "source": [
+    "**Title()**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "7ca87251-ca7f-48ef-bb8a-e4e802341758",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Data Analytics Course\n",
+      "Hello Good Morning\n"
+     ]
+    }
+   ],
+   "source": [
+    "text = \"data analytics course\"\n",
+    "print(text.title())\n",
+    "\n",
+    "Text = \"hello good morning\"\n",
+    "print(Text.title())"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "804ca757-4ab4-4397-b70e-4eb97414f54f",
+   "metadata": {},
+   "source": [
+    "**CAPITALIZE()**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "d5be2fd3-8b02-4d9c-ad7c-a0ac59ad4da3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Python programming\n"
+     ]
+    }
+   ],
+   "source": [
+    "text = \"python programming\"\n",
+    "print(text.capitalize())\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "21774840-22b4-4029-8ec0-2219b4df5d3f",
+   "metadata": {},
+   "source": [
+    "**REPLACE ()**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "232e0c65-ac5d-4541-bd32-1f86b5e9f0eb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "I love Python\n"
+     ]
+    }
+   ],
+   "source": [
+    "sentence = \"I love Java\"\n",
+    "print(sentence.replace(\"Java\", \"Python\"))\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "78ad9d82-e732-40f3-be7f-a6dd3c8e23af",
+   "metadata": {},
+   "source": [
+    "**COUNT()**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "856a1d94-5fd9-4f13-954b-beffe5099315",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "text = \"banana\"\n",
+    "print(text.count(\"a\"))\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d241725b-ab76-4b70-b472-8a699ef06176",
+   "metadata": {},
+   "source": [
+    "**FIND()**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "8e0273e0-2204-4217-9230-289653239714",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n"
+     ]
+    }
+   ],
+   "source": [
+    "text = \"Python\"\n",
+    "print(text.find(\"t\"))\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "45b46cd3-8a92-44ab-9b13-7943a07e3a6f",
+   "metadata": {},
+   "source": [
+    "**STARTSWITH()**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "5b68e3c6-24bf-46d1-85a7-3fda901fa954",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "email = \"student@gmail.com\"\n",
+    "print(email.startswith(\"student\"))\n",
+    "\n",
+    "print(email.startswith(\"ANU\"))\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e76945fd-878a-4135-a0c2-b9028379378c",
+   "metadata": {},
+   "source": [
+    "**endswith()**\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "2ca3026d-e449-46bd-8bd8-1effa70df277",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "email = \"student@gmail.com\"\n",
+    "print(email.endswith(\".com\"))\n",
+    "print(email.endswith(\".MAIL\"))\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d833f273-4ad6-49bd-915d-c0ce8baf7b05",
+   "metadata": {},
+   "source": [
+    "**strip()**\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "3dbf1b2f-4622-4b15-b422-8b8da624725b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Python\n"
+     ]
+    }
+   ],
+   "source": [
+    "text = \"   Python   \"\n",
+    "print(text.strip())\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0db67d7b-16b7-4212-a385-56cd0d10d65f",
+   "metadata": {},
+   "source": [
+    "**split()**\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "49a2ad5f-efe9-423c-98e0-2935d25b96fb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Python', 'SQL', 'Power BI']\n"
+     ]
+    }
+   ],
+   "source": [
+    "text = \"Python,SQL,Power BI\"\n",
+    "print(text.split(\",\"))\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "18d19a82-9d9d-4654-baf7-4b33f81d7e2b",
+   "metadata": {},
+   "source": [
+    " **join()**\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "b2dc977f-55cf-4b11-ba61-4be183e6cc12",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Python - SQL - Power BI\n"
+     ]
+    }
+   ],
+   "source": [
+    "courses = ['Python', 'SQL', 'Power BI']\n",
+    "print(\" - \".join(courses))\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ecceb646-7745-453e-b790-622a462d7f13",
+   "metadata": {},
+   "source": [
+    "**PRACTICE PROBLEMS**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1ec9eb3e-a147-4f57-a90c-ddd9e193ca7f",
+   "metadata": {},
+   "source": [
+    "**Question - 1**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "30a11944-e90e-42af-9d4d-a758d361dda1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "D\n",
+      "e\n",
+      "12\n"
+     ]
+    }
+   ],
+   "source": [
+    "name = \"Data Science\"\n",
+    "print(name[0])\n",
+    "print(name[-1])\n",
+    "print(len(name))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "91505abe-27f7-4729-83b4-2bfc6c14f637",
+   "metadata": {},
+   "source": [
+    "**Question - 2**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "c1d49c31-fd3a-4dd8-8dd9-a779b6593554",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "PYTHON PROGRAMMING\n",
+      "2\n",
+      "Java programming\n"
+     ]
+    }
+   ],
+   "source": [
+    "text = \"python programming\"\n",
+    "print(text.upper())\n",
+    "print(text.count(\"p\"))\n",
+    "print(text.replace(\"python\",\"Java\"))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f9c0d50f-8e48-4f62-8ec1-834f7faad8a2",
+   "metadata": {},
+   "source": [
+    "**Question - 3**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "cb4a6278-a2ba-4519-8e0d-0dd144f7f7fe",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "student\n"
+     ]
+    }
+   ],
+   "source": [
+    "email = \"student@gmail.com\"\n",
+    "print(email.endswith(\".com\"))\n",
+    "print(email[0:7])\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c8ad749e-c14f-4ee2-a0f1-2cf9d4b6796f",
+   "metadata": {},
+   "source": [
+    "**Question - 4**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "id": "49e45d97-96d7-48f1-b2e3-ad0407e1f6e6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "data analytics\n",
+      "DT NLTC\n",
+      "SCITYLANA ATAD\n"
+     ]
+    }
+   ],
+   "source": [
+    "course = \"DATA ANALYTICS\"\n",
+    "print(course.lower())\n",
+    "print(course[::2])\n",
+    "print(course[::-1])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4b5ac3d4-8a99-4797-b5a4-c49e0d06ddd0",
+   "metadata": {},
+   "source": [
+    "**String Slicing**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "1627c0e6-1d4a-479b-9372-2c69bee66633",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Dt\n"
+     ]
+    }
+   ],
+   "source": [
+    "Subject = \"Data Analytics\"\n",
+    "print(Subject[0:4:2])\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "7850f659-a320-403a-a4d2-7ea7ed4fb898",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " Analytics\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(Subject[4:])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "b000bf9a-2c81-449c-ab90-ba3955516806",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Data \n"
+     ]
+    }
+   ],
+   "source": [
+    "print(Subject[:5])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "9975a922-b74d-45ff-8c9e-1ac604c07982",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Dt nltc\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(Subject[::2])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "a58c31c0-ce45-46f5-9126-916f5defe562",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "scitylanA ataD\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(Subject[::-1])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "df7aa723-3a0c-49ff-b4a5-8648a2dd76a6",
+   "metadata": {},
+   "source": [
+    "**LIST**\n",
+    "A List is a collection of multiple items stored in a single variable.\n",
+    "Features of Lists\n",
+    "Ordered\n",
+    "Mutable (can be modified)\n",
+    "Allows duplicate values\n",
+    "Can store different data types\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "b1e0e890-7ad4-4a4c-b2d0-b3d69cdd3dd0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Apple', 'Orange', 'Mango']\n",
+      "Apple\n",
+      "Orange\n",
+      "Orange\n"
+     ]
+    }
+   ],
+   "source": [
+    "fruits = [\"Apple\", \"Orange\", \"Mango\"]\n",
+    "print(fruits)\n",
+    "print(fruits[0])\n",
+    "print(fruits[1])\n",
+    "print(fruits[-2])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "f76d311d-d146-4e75-8f4e-d8aff5daeb4a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Adithya', 25, 75.5, True]\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "mixed = [\"Adithya\", 25, 75.5, True]\n",
+    "print(mixed)\n",
+    "print(mixed[-1])\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "baad05b6-c89e-4376-8892-ba2e744ad59a",
+   "metadata": {},
+   "source": [
+    "**LIST METHODS**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ec14fc0e-f4bf-4f05-84d6-f2e154969490",
+   "metadata": {},
+   "source": [
+    "**APPEND**\n",
+    "\n",
+    "Adds an element to the end of the list.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "71b936c0-052c-4912-b41d-50916af17c06",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Apple', 'Orange', 'Mango']\n"
+     ]
+    }
+   ],
+   "source": [
+    "fruits=[\"Apple\",\"Orange\"]\n",
+    "fruits.append(\"Mango\")\n",
+    "print(fruits)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8aa5cb36-8517-4f85-b34b-3eddbf59b15f",
+   "metadata": {},
+   "source": [
+    "**INSERT()**\n",
+    "\n",
+    "Adds an element at a specific position.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "c9f790ce-6fcd-422c-ad53-52580ad453a7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Apple', 'Orange', 'Mango']\n"
+     ]
+    }
+   ],
+   "source": [
+    "fruits = [\"Apple\", \"Mango\"]\n",
+    "\n",
+    "fruits.insert(1, \"Orange\")\n",
+    "\n",
+    "print(fruits)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "360f3484-b52e-41b8-96eb-f8a3443d9b76",
+   "metadata": {},
+   "source": [
+    "**extend()**\n",
+    "\n",
+    "Adds multiple elements.\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "46a459c8-8e8a-49a4-908e-71ec69eaaad0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Apple', 'Orange']\n",
+      "['Apple', 'Orange', 'Mango', 'Grapes']\n"
+     ]
+    }
+   ],
+   "source": [
+    "fruits = [\"Apple\", \"Orange\"]\n",
+    "print(fruits)\n",
+    "fruits.extend([\"Mango\", \"Grapes\"])\n",
+    "\n",
+    "print(fruits)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1f547110-2613-4626-8522-f13dc71184ec",
+   "metadata": {},
+   "source": [
+    "**REMOVE()**\n",
+    "\n",
+    "Removes a specific value."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "8391115c-ba9c-4f32-9593-f467f269644b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Apple', 'Mango']\n",
+      "['Apple']\n"
+     ]
+    }
+   ],
+   "source": [
+    "fruits = [\"Apple\", \"Orange\", \"Mango\"]\n",
+    "\n",
+    "fruits.remove(\"Orange\")\n",
+    "\n",
+    "print(fruits)\n",
+    "\n",
+    "fruits.remove(\"Mango\")\n",
+    "print(fruits)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "cd3b4b32-c595-45ed-8627-1c2bc4ea8ffb",
+   "metadata": {},
+   "source": [
+    "**POP**\n",
+    "\n",
+    "Removes an element using index.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "18f44562-6447-4a2a-a67b-4fa97cf73e8e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[11, 12, 14]\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = [11,12,13,14]\n",
+    "numbers.pop(2)\n",
+    "print(numbers)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "deb9eae5-9d43-454b-b668-c736a3ab48c3",
+   "metadata": {},
+   "source": [
+    "**POP WITHOUT INDEX**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "5ea07768-859a-4531-a5bc-00921510e915",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 20]\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = [10, 20, 30]\n",
+    "numbers.pop()\n",
+    "print(numbers)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "bbc76ea8-1e13-4dcd-a940-fadaca9491dc",
+   "metadata": {},
+   "source": [
+    "**CLEAR()**\n",
+    "\n",
+    "Removes all elements."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "264200cb-8fc3-48c9-b8b2-32dbbc917494",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[]\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = [10, 20, 30]\n",
+    "numbers.clear()\n",
+    "print(numbers)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1e5fbb1a-dc2f-48db-96e4-892e64f5a3a5",
+   "metadata": {},
+   "source": [
+    "**INDEX()**\n",
+    "\n",
+    "Returns the position of an element.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "b18f3d99-0f70-468e-94fb-15de69d3dc34",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "fruits = [\"Apple\", \"Orange\", \"Mango\"]\n",
+    "print(fruits.index(\"Orange\"))\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "811a7c5f-fcbe-413a-9966-8e6f323d72ea",
+   "metadata": {},
+   "source": [
+    "**count()**\n",
+    "\n",
+    "Counts occurrences of an element.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "75a6d4fb-abe2-4197-b3b4-3c75ec72f5cf",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = [10, 20, 10, 30, 10]\n",
+    "print(numbers.count(10))\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "95f5226e-8313-412d-b2c1-63e4994543c1",
+   "metadata": {},
+   "source": [
+    "**sort()**\n",
+    "Sorts the list.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "4fce064b-fc8a-456f-9647-2fc743f5b0f0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 20, 30, 50]\n",
+      "[50, 30, 20, 10]\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = [50, 10, 30, 20]\n",
+    "numbers.sort()\n",
+    "print(numbers)\n",
+    "numbers.sort(reverse=True)\n",
+    "print(numbers)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "90400c61-76a3-4f3d-826d-714c765c9044",
+   "metadata": {},
+   "source": [
+    "**copy()**\n",
+    "\n",
+    "Creates a duplicate/copy of the list.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "a218a7cf-4bae-46a3-952b-4ba30154ad84",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 20, 30]\n"
+     ]
+    }
+   ],
+   "source": [
+    "list1 = [10,20,30]\n",
+    "list2 = list1.copy()\n",
+    "print(list2)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "8ac15e1a-d1e2-4c72-b662-e3c8f1b242b5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[12, 23, 'fruit']\n"
+     ]
+    }
+   ],
+   "source": [
+    "list = [12,23,\"fruit\"]\n",
+    "list2 = list.copy()\n",
+    "print(list2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "27320ad5-766f-46f3-affb-32d0a8f88a87",
+   "metadata": {},
+   "source": [
+    "**LIST SLICING**\n",
+    "\n",
+    "List slicing allows us to extract a portion of a list.\n",
+    "Syntax\n",
+    "list[start:stop:step]\n",
+    "\n",
+    "Where:\n",
+    "start → Starting index\n",
+    "stop → Ending index (not included)\n",
+    "step → Increment value\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "dbfd112e-0528-4df9-9643-809c11b2060d",
+   "metadata": {},
+   "source": [
+    "**Basic Slicing**\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "90bec1d5-f3f2-4c82-b52b-f03a1e684c5e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[20, 30, 40]\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = [10,20,30,40,50,60]\n",
+    "print(numbers[1:4])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "24dcf442-dd81-4665-8a2b-0b55eb9732cc",
+   "metadata": {},
+   "source": [
+    "**From Beginning**\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "d285361b-bcc8-4686-8ba9-d2bd3c7463ca",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 20, 30, 40]\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = [10,20,30,40,50,60]\n",
+    "print(numbers[:4])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "869c2ec3-23a9-495a-9f85-42bdb4b0ab53",
+   "metadata": {},
+   "source": [
+    "**Till End**\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "b51266d0-0cc5-47fa-a6fa-bc72ee9fb2e5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[30, 40, 50, 60]\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = [10,20,30,40,50,60]\n",
+    "print(numbers[2:])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0e5ac9e6-c4ef-4d65-8a24-3b51e2dbf52d",
+   "metadata": {},
+   "source": [
+    "**Entire List**\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "7e12ec85-b929-49b2-b4e9-876ddae80a3f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 20, 30, 40]\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = [10,20,30,40]\n",
+    "print(numbers[:])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f8f32179-1ca8-45a7-8e19-1cbc88f28b21",
+   "metadata": {},
+   "source": [
+    "**Using Step Value**\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "138209e8-04c8-4eac-ad4a-f7b1a06433f7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 30, 50]\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = [10,20,30,40,50,60]\n",
+    "print(numbers[::2])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0c45acbe-2dbf-4a7f-91bc-150c3e083eb8",
+   "metadata": {},
+   "source": [
+    "**Reverse a List Using Slicing**\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "dd7c5f90-992f-41fe-a88e-8939074d8722",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[50, 40, 30, 20, 10]\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = [10,20,30,40,50]\n",
+    "print(numbers[::-1])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fbb2ee5f-7b94-436c-98fa-f90aef33b6aa",
+   "metadata": {},
+   "source": [
+    "**Negative Index Slicing**\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "401f9fa7-52ff-4292-affd-ae932290f6de",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[30, 40, 50]\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = [10,20,30,40,50,60]\n",
+    "print(numbers[-4:-1])"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.14.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
